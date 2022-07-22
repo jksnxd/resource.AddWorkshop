@@ -1,5 +1,5 @@
 # resource.AddWorkshop
-Automate the process of getting the resource.AddWorkshop necessary IDs.
+Automate the process of getting the resource.AddWorkshop necessary IDs. There are not very many options for this automated process out there so I wanted to make one.
 
 # Requirements
 Python (I used 3.10.5 to write this script) \
