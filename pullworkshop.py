@@ -19,7 +19,7 @@ while i < len(links):
     wsid_item_buffer.append(str(find_link['href'][55:]))
     i += 1
 
-with open("printout.txt", 'w') as file:
+with open("workshop.lua", 'w') as file:
     for item in wsid_item_buffer:
         file.write("resource.AddWorkshop(" + item + ")" + "\n")
 
