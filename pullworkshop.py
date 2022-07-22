@@ -4,7 +4,8 @@ import requests
 wsid_item_buffer = []
 
 # capture the html page for consumption
-url = 'https://steamcommunity.com/sharedfiles/filedetails/?id=2270313137'
+# url = 'https://steamcommunity.com/sharedfiles/filedetails/?id=2270313137'
+url = input("Input the url: ")
 collection_page = requests.get(url)
 text_page = collection_page.text
 soup = BeautifulSoup(text_page, 'html.parser')
