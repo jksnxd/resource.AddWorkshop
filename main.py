@@ -1,5 +1,4 @@
-import re
-from bs4 import BeautifulSoup, SoupStrainer
+from bs4 import BeautifulSoup
 import requests
 
 wsid_item_buffer = []
