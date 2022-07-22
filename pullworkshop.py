@@ -21,7 +21,7 @@ while i < len(links):
 
 with open("workshop.lua", 'w') as file:
     for item in wsid_item_buffer:
-        file.write("resource.AddWorkshop(" + item + ")" + "\n")
+        file.write("resource.AddWorkshop(" + '"' + item + '"' + ")" + "\n")
 
 
 
