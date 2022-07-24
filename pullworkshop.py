@@ -13,6 +13,7 @@ soup = BeautifulSoup(text_page, 'html.parser')
 # find all the div tags, then look into the children for the class tag called "collectionItemDetails"
 links = soup.find_all('div', {"class": "collectionItemDetails"})
 
+print("Extracting IDs from workshop collection....")
 i = 0
 while i < len(links):
     find_link = links[i].find("a", href=True)
@@ -21,6 +22,7 @@ while i < len(links):
 
 with open("workshop.lua", 'w') as file:
     for item in wsid_item_buffer:
+        print(f"added {item} to workshop.lua...")
         file.write("resource.AddWorkshop(" + '"' + item + '"' + ")" + "\n")
 
 
