@@ -25,16 +25,3 @@ with open("workshop.lua", 'w') as file:
         print(f"added {item} to workshop.lua...")
         file.write("resource.AddWorkshop(" + '"' + item + '"' + ")" + "\n")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
